@@ -11,12 +11,13 @@ city_state_zip = "Amana, Iowa, 52203"
 phone = "319-540-9052"
 course = "CIS-121"
 
-
-print(name)
-print(address)
-print(city_state_zip)
-print(phone)
-print(course)
-
+def print_address():
+    print(name)
+    print(address)
+    print(city_state_zip)
+    print(phone)
+    print(course)
+    
+print_address()
 
 
