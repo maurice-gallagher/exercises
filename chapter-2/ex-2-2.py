@@ -19,7 +19,8 @@
 # Print the projected profit.
 # be sure to format the output to two decimal places
 
+sales = input('What are your sales: ')
+profit = float(sales)
+projected_profit = profit * .23
 
-
-
-
+print('your profit is', '%.2f' % projected_profit)

@@ -8,7 +8,6 @@
 # Variables to hold the size of the tract and number of acres.
 # be sure to initialize these as floats
 
-
 # Constant for the number of square feet in an acre.
 
 
@@ -21,8 +20,12 @@
 
 # Print the number of acres.
 # remember to format the acres to two decimal places
+tract = float(input('What is the size of the tract in square feet: '))
+SQUARE_FEET_IN_ACRES = 43560
 
+acres = tract / 43560
 
+print('The tract is', format(acres, ".2f"), 'acres in size')
 
 
 
