@@ -18,8 +18,12 @@
 
 
 # Print the results for all calculations.
+speed = float(60.675)
 
+time1 = float(6*speed)
+time2 = float(10*speed)
+time3 = float(15*speed)
 
-
-
-
+print('you will go', format(time1, ".2f"),' miles in six hours')
+print('you will go', format(time2, ".2f"),'miles in ten hours')
+print('you will go', format(time3, ".2f"),'miles in fifteen hours')
