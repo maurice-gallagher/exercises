@@ -20,3 +20,12 @@
 
 
 # Display the total number of bugs collected for all five days.
+
+bugs_collected = 0
+total = 500
+
+for i in range(5):
+    bugs_collected += (int(input('How many bugs did you catch in one day: ')))
+    
+total = bugs_collected + total
+print('the total bugs collected in five days is', total)

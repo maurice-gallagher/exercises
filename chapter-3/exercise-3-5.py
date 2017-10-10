@@ -6,7 +6,6 @@
 # then display the weight and a range message.
 
 
-
 # Global constants for minimum, maximum and mass multiplier values
 
 
@@ -23,10 +22,13 @@
 
 # If weight > maximum or < than minimum display an appropriate message
 
+mass = float(input('Enter a mass in kg to be converted to Newtons: '))
+MIN = 9.81 
+MAX = 1000
+newtons = float(mass*9.81)
 
+if newtons > MAX or newtons < MIN:
+    print('This is not okay')
 
-
-
-
-
-
+else:
+    print(format(newtons, ".2f"), 'Newtons')

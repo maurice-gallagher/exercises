@@ -11,15 +11,17 @@
 # Get the person's age.
 # remember to convert the input to an int.
 
-
 # Determine if the person is an infant, child, teenager, or adult and set the category.
 # Use a series of if ... elif ... etc. statements.
 
-
-
-
-
 # display a message with the age category.
 
-
-
+age = int(input('please enter your age: '))
+if age < 2:
+    print('infant')
+if 2 <= age < 13:
+    print('child')
+if 13 <= age < 18:
+    print('teen')
+if 18 <= age:
+    print('adult')

@@ -21,17 +21,17 @@
 DAY_OF_WEEK = int(input('please insert your number between 1-7 to see the day of the week: '))
 if DAY_OF_WEEK == 1:
     print('Sunday')
-if DAY_OF_WEEK == 2:
+elif DAY_OF_WEEK == 2:
     print('Monday')
-if DAY_OF_WEEK == 3:
+elif DAY_OF_WEEK == 3:
     print('Tuesday')
-if DAY_OF_WEEK == 4:
+elif DAY_OF_WEEK == 4:
     print('Wednesday')
-if DAY_OF_WEEK == 5:
+elif DAY_OF_WEEK == 5:
     print('Thursday')
-if DAY_OF_WEEK == 6:
+elif DAY_OF_WEEK == 6:
     print('Friday')
-if DAY_OF_WEEK == 7:
+elif DAY_OF_WEEK == 7:
     print('Saturday')
 elif DAY_OF_WEEK > 7:
     print('There are not more than 7 days in the week')
