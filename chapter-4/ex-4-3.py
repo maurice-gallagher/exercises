@@ -8,9 +8,7 @@
 # Declare variables to store amount spent, budget, total spent, and difference.
 # initialize all variables as floats
 
-    
 # Get the budget from the user and cast it to a float.
-
 
 # Use a while loop to get the amounts spent from the user and add them to total spent
 # A while loop is preferred because we don't know how many amounts the user will enter.
@@ -23,17 +21,35 @@
 
     # add the amount spent to the total spent
 
-
-
 # outside the loop, set the difference to hold budget - total spent
 
 # Display a message with the total spent formatted to two decimal places
-
 
 # if over budget, display a message with the difference formatted to two places.
 
 # else if under budget, display a message with the difference formatted to two places.
 
 # else display message stating that spending and budget were equal.
+amount_spent = float
+amount_spent = -1
+total_spent = 0.0
+difference = 0.0
 
+budget = float(input('what is your budget: '))
+
+while amount_spent != 0:
+    amount_spent = float(input('what did you spend: '))
+    total_spent += amount_spent
+    if total_spent >= budget:
+        break
+    
+difference = budget - total_spent
+print(format(total_spent, ".2f"))
+
+if total_spent > budget:
+    print(format(difference, ".2f"), 'over your budget')
+elif total_spent < budget:
+    print(format(difference, ".2f"), 'under your budget')
+else:
+    print('your spending and budget were equal')
 

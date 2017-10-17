@@ -8,21 +8,16 @@
 # Variables for month, day, year and message
 # initialize month, day and year as integers, message as a string
 
-
 # Get month and cast it to int
-
 
 # Get day and cast it to int
 
-
 # Get year and cast it to int
-
 
 # This problem can be solved with if-else logic by the reducing the problem domain
 # if month input is out of range
 
 	# set message to hold "invalid month" message
-
 
 # else if day input is out of range
 
@@ -40,7 +35,25 @@
     
     # else add " is not a magic date" to message
 
-
 # print message for the user
 
+month = int(input('what month is it: '))
+day = int(input('what day is it: '))
+year = int(input('what year is it: '))
 
+if 12 < month < 0:
+    print('this is not a valid month')
+elif 31 < day < 0:
+    print('this is not a valid day')
+elif 99 < year < 0:
+    print('this is not a valid year')
+
+else:
+    print(format(month,"02d"), '/', format(day,"02d"), '/', format(year,"02d"))
+    
+if month * day == year:
+    print('that is the magic date!')
+elif month * day < year:
+    print('that is not a magic date')
+elif month * day > year:
+    print('that is not a magic date')

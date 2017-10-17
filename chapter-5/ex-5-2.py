@@ -6,11 +6,7 @@
 # 	and passes them to a function to be totaled
 # and displayed
 
-
-
 # Global constants for the state and county tax rates
-
-
 
 # define the main function
 
@@ -23,8 +19,6 @@
     # Calculate the county tax using the global constant for county tax rate
 
     # Call the sale details function, passing the purchase, state tax and county tax
-
-
 
 # define a function to display purchase details
 # this function accepts purchase, stateTax, and countyTax as arguments,
@@ -40,7 +34,29 @@
     # Display the purchase details, including purchase, state tax, county tax,
     #	total tax, and sale total, each on a line.  Format floats to 2 decimal places.
 
-
-
 # Call the main function to start the program.
+
+STATE_TAX = 0.6
+COUNTY_TAX = 0.6
+
+def main(): 
+    purchase = 0.0
+    state_tax = 0.0
+    county_tax = 0.0
+    purchase = float(input('enter purchase amount: '))
+    state_tax = purchase * STATE_TAX
+    county_tax = purchase * COUNTY_TAX
+    sales_details(purchase, state_tax, county_tax)
+
+def sales_details(purchase, state_tax, county_tax):
+    total_tax = 0.0
+    sales_total = 0.0
+    total_tax = state_tax + county_tax
+    sales_total = total_tax + purchase
+    print(format(sales_total, ".2f"), 'is your total')
+main()
+    
+
+
+
 
