@@ -31,3 +31,10 @@
 
 # Call the main function to start the program
 
+PERCENT_TO_INSURE = 0.5
+
+def main():
+    replacement_cost = float
+    
+    
+

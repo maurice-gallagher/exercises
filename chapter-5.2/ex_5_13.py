@@ -39,8 +39,24 @@
 
 
 # Call the main function to start the program
+from Tables import print_two_column_header
 
+def main():
+    distance = 0.0
+    
+    print_two_column_header('Time','Distance')
+    
+    global x
+    for x in range(60):
+        print(distance)
+        
+def falling_distance(time):
+    distance = float(0.5 * 9.8 * time**2)
+    print(distance)
+    return distance
 
+print(__name__)
 
+main()
 
-
+pg222
