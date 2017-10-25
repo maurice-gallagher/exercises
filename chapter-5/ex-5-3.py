@@ -34,7 +34,19 @@
 PERCENT_TO_INSURE = 0.5
 
 def main():
-    replacement_cost = float
+    replacement_cost = 0.0
+    min_insure = 0.0
+    replacement_cost = float(input("What is the replacement cost: "))
+    min_insure = replacement_cost * PERCENT_TO_INSURE
+    insurance_details(replacement_cost, min_insure)
+
+def insurance_details(replacement_cost, min_insure):
+    print('Cost to replace', '$',format(replacement_cost, ".2f"))
+    print('Percent to insure', format(PERCENT_TO_INSURE, ".2f"),'%')
+    print('Minimum insurance coverage', '$',format(min_insure, ".2f"))
+
+main()
+    
     
     
 

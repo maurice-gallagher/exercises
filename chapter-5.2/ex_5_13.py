@@ -52,7 +52,6 @@ def main():
         
 def falling_distance(time):
     distance = float(0.5 * 9.8 * time**2)
-    print(distance)
     return distance
 
 print(__name__)
